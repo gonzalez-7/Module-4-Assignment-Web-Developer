@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services</title>
+    <title>Forms Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,13 +20,22 @@
     </header>
 
     <main>
-        <h1>Our Services</h1>
-        <p>Check out our featured video below!</p>
+        <h1>Additional Forms</h1>
+        <form>
+            <label for="feedback">Feedback:</label>
+            <input type="text" id="feedback" name="feedback" required>
 
-        <video width="320" height="180" controls>
-            <source src="media/tech.mp4" type="video/mp4">
-            Your browser does not support the video.
-        </video>
+            <label for="rating">Rate Us:</label>
+            <select id="rating" name="rating">
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Good</option>
+                <option value="3">3 - Average</option>
+                <option value="2">2 - Poor</option>
+                <option value="1">1 - Very Poor</option>
+            </select>
+
+            <input type="submit" value="Submit Feedback">
+        </form>
     </main>
 
     <footer>
